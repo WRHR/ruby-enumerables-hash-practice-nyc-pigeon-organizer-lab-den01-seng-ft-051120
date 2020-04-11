@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, options| 
     options.each do |option, pigeons|
       pigeons.each do |pigeon|
-        p org_hash[pigeon] ||= {}
+        org_hash[pigeon] ||= {}
         org_hash[pigeon][attribute] ||= []
         org_hash[pigeon][attribute] << option.to_s
       end
