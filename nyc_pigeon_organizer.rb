@@ -18,9 +18,9 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(data)
-  data.reduce({}) do |memo, pair|
+  data.reduce({}) do |memo, (key, value)|
     p memo
-    p pair
+    p key
     memo
   end
 end
