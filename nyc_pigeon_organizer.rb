@@ -1,3 +1,5 @@
+
+
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |memo, pair|
     p memo
@@ -5,3 +7,5 @@ def nyc_pigeon_organizer(data)
     memo
   end
 end
+
+
