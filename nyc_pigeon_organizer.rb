@@ -28,7 +28,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  org_hash
+   p org_hash
 end
 
 nyc_pigeon_organizer(pigeon_data)
