@@ -22,6 +22,9 @@ def nyc_pigeon_organizer(data)
     p memo
     p key
     p value
+    pigeon_name = data.reduce(nil) do |memo, (key, value)|
+      memo = 
+    end
     memo
   end
 end
