@@ -20,12 +20,15 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
   org_hash = {}
   data.each do |attribute, options| 
-    options.each do |options, pigeons|
+    options.each do |option, pigeons|
       pigeons.each do |pigeon|
         org_hash[pigeon] ||= {}
-        org_hash[pigeon]
+        org_hash[pigeon][attribute] ||= []
+        org_hash[pigeon][attribute] << option.to_s
+      end
     end
   end
+  org_hash
 end
 
 nyc_pigeon_organizer(pigeon_data)
