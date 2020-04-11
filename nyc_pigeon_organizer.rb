@@ -18,14 +18,13 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(data)
-  data.reduce({}) do |memo, (key, value)|
-    p memo
-    p key
-    p value
-    pigeon_name = data.reduce(nil) do |memo, (key, value)|
-      memo = 
+  org_hash = {}
+  data.each do |attribute, options| 
+    options.each do |options, pigeons|
+      pigeons.each do |pigeon|
+        org_hash[pigeon] ||= {}
+        org_hash[pigeon]
     end
-    memo
   end
 end
 
